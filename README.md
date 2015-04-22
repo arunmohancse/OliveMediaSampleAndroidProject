@@ -10,7 +10,7 @@ Use this project as a template to get you started. Fork this project, do your wo
 - Switch to a screen showing the details gathered from the API endpoint (base on the mockup "meetings")
 - Periodically reload the details from the API (once every 30 seconds)
 - Store the results client side, so if you reload the app and the API is failing, it will still display the previous results
-- Only show meetings that are in future or are currently happening, meetings more than an hour ago should not be displayed
+- Only show meetings that are in the future or are currently happening, meetings more than an hour ago should not be displayed
 
 ####Assets
 There are 2 folders for assets.
