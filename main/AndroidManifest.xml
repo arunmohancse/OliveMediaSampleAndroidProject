@@ -26,6 +26,9 @@
     android:name="co.olivemedia.olivemediasampleproject.activities.MeetingsActivity$AlarmReceiver"
     android:exported="false">
 </receiver>  -->
+<service
+    android:name="co.olivemedia.olivemediasampleproject.services.RepeatCallService"
+    android:enabled="true" />
         <activity
             android:name="co.olivemedia.olivemediasampleproject.activities.MeetingsActivity"
             android:configChanges="keyboardHidden|orientation"

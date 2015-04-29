@@ -21,6 +21,7 @@ import co.olivemedia.olivemediasampleproject.dao.MeetingsDao;
 import co.olivemedia.olivemediasampleproject.holders.Meetings;
 import co.olivemedia.olivemediasampleproject.holders.MeetingsBaseHolder;
 import co.olivemedia.olivemediasampleproject.managers.DbManager;
+import co.olivemedia.olivemediasampleproject.managers.MeetingsManager;
 import co.olivemedia.olivemediasampleproject.services.RepeatCallService;
 import co.olivemedia.olivemediasampleproject.utils.UtilValidate;
 import co.olivemedia.olivemediasampleproject.webservice.AsyncTaskCallBack;
@@ -54,9 +55,9 @@ public class MeetingsActivity  extends Activity {
 		  PendingIntent pintent = PendingIntent.getService(this, 0, intent, 0);
 		  startService(intent);
 
-		  // Start every 5 minutes
+		  // Start every 30 sec
 		  alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),
-		    10000, pintent);
+		    30000, pintent);
 		
 		//myTimer.scheduleAtFixedRate(myTimerTask, 0, 10000); //(timertask,delay,period)
 		
